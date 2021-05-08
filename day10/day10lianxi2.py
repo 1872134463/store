@@ -1,0 +1,6 @@
+f1 =open(file="E:\2021培训\Python\day10\sky.jpg",mode="rb")
+f2 =open(file="E:\pythonProject1\day10\bb.jpg",mode="wb")
+data=f1.read()
+f2.write(data)
+f2.close()
+f1.close()
