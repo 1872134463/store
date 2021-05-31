@@ -1,0 +1,15 @@
+from selenium import webdriver
+import  time
+driver=webdriver.Chrome()
+driver.get(r"file:///C:/Users/18721/AppData/Local/Temp/Rar$EXa2612.12013/%E8%B5%84%E6%96%99/%E7%BB%83%E4%B9%A0%E7%9A%84html/%E7%BB%83%E4%B9%A0%E7%9A%84html/%E4%B8%8A%E4%BC%A0%E6%96%87%E4%BB%B6%E5%92%8C%E4%B8%8B%E6%8B%89%E5%88%97%E8%A1%A8/autotest.html")
+driver.find_element_by_xpath("//*[@id='accountID']").send_keys("chenda")
+driver.find_element_by_xpath("//*[@id='passwordID']").send_keys("123456")
+driver.find_element_by_xpath("//*[@id='areaID']").send_keys("北京市")
+driver.find_element_by_xpath("//*[@id='sexID1']").click()
+driver.find_element_by_xpath("//*[@value='spring']").click()
+driver.find_element_by_xpath("//*[@name='file' and @type='file']").send_keys(r"E:\picture\微信图片_20210310152628.jpg")
+driver.find_element_by_xpath("//*[@id='buttonID']").click()
+time.sleep(3)
+driver.switch_to.alert.accept()
+time.sleep(3)
+driver.quit()
